@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "38Tj3u+Jop4xvJr8RqjvzrHZi1cEQwOu3zL+qj0FEHMrVIkkNfpASIq39B7/CoAR6f+qAyGsny/KyBPgmIcA/w==",
+  "dgSpecHash": "1H9q4/AxDN++fn7DAGMVuY3Qm5I/F4RgK61l/529o4NDb5Ek7zsa1mBWUiHpMxV2PFwbyi1CFhl2ctqaDuslDg==",
   "success": true,
   "projectFilePath": "E:\\DIPTO\\LEAVE\\HRLM\\HR.LeaveManagement\\HR.LeaveManagement.Application\\HR.LeaveManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tanjilul\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\tanjilul\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\tanjilul\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\tanjilul\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\tanjilul\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\tanjilul\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\tanjilul\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
