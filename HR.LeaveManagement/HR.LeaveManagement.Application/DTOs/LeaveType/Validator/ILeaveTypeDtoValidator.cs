@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using HR.LeaveManagement.Application.Persistence.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Application.DTOs.LeaveType.Validator
 {
-    public class ILeaveTypeDtoValidator:AbstractValidator<LeaveTypeDto>
+    public class ILeaveTypeDtoValidator:AbstractValidator<ILeaveTypeDto>
     {
+    
         public ILeaveTypeDtoValidator()
         {
             RuleFor(p => p.Name)
