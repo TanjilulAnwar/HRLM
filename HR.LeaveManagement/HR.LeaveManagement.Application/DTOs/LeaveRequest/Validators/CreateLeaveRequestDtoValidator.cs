@@ -15,19 +15,7 @@ namespace HR.LeaveManagement.Application.DTOs.LeaveRequest.Validators
         {
             _leaveTypeRepository = leaveTypeRepository;
             Include(new ILeaveRequestDtoValidator(leaveTypeRepository));
-            //_leaveTypeRepository = leaveTypeRepository;
-            //RuleFor(p => p.StartDate)
-            //    .LessThan(DateTime.Now).WithMessage("{PropertyName} must be before {ComaparisonValue}");
-            //RuleFor(p => p.EndDate)
-            //    .GreaterThan(p=>p.StartDate).WithMessage("{PropertyName} must be before {ComaparisonValue}");
-            //RuleFor(p => p.LeaveTypeId)
-            //    .GreaterThan(0)
-            //    .MustAsync(async (id, token) =>
-            //    {
-            //        var leaveTypeExists = await _leaveTypeRepository.Exists(id);
-            //        return !leaveTypeExists;
-            //    }).WithMessage("{ PropertyName} does not exist");
-
+          
 
         }
 
