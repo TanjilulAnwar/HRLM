@@ -1,0 +1,17 @@
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\Hr.LeaveManagement.Persistence.deps.json
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\Hr.LeaveManagement.Persistence.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\ref\Hr.LeaveManagement.Persistence.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\Hr.LeaveManagement.Persistence.pdb
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\HR.LeaveManagement.Application.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\HR.LeaveManagement.Domain.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\HR.LeaveManagement.Application.pdb
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\bin\Debug\net5.0\HR.LeaveManagement.Domain.pdb
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.csproj.AssemblyReference.cache
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.AssemblyInfoInputs.cache
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.AssemblyInfo.cs
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.csproj.CoreCompileInputs.cache
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.csproj.CopyComplete
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\ref\Hr.LeaveManagement.Persistence.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\Hr.LeaveManagement.Persistence\obj\Debug\net5.0\Hr.LeaveManagement.Persistence.pdb
