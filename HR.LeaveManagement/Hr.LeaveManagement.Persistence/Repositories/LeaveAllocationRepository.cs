@@ -17,9 +17,6 @@ namespace Hr.LeaveManagement.Persistence.Repositories
             _dbContext = dbContext;
         }
 
-     
-       
-
        
     }
 }

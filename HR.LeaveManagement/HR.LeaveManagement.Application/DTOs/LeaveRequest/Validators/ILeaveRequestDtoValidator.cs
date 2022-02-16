@@ -12,10 +12,10 @@ namespace HR.LeaveManagement.Application.DTOs.LeaveRequest.Validators
             _leaveTypeRepository = leaveTypeRepository;
 
             RuleFor(p => p.StartDate)
-                .LessThan(p => p.EndDate).WithMessage("{PropertyName} must be before {Comparisonvalue}");
+                .LessThan(p => p.EndDate).WithMessage("{PropertyName} must be before {ComparisonValue}");
 
             RuleFor(p => p.EndDate)
-               .GreaterThan(p => p.StartDate).WithMessage("{PropertyName} must be after {Comparisonvalue}");
+               .GreaterThan(p => p.StartDate).WithMessage("{PropertyName} must be after {ComparisonValue}");
 
 
             RuleFor(p => p.LeaveTypeId)
@@ -23,9 +23,9 @@ namespace HR.LeaveManagement.Application.DTOs.LeaveRequest.Validators
                .MustAsync(async (id, token) =>
                {
                    var leaveTypeExists = await _leaveTypeRepository.Exists(id);
-                   return !leaveTypeExists;
+                   return leaveTypeExists;
 
-               }).WithMessage("{ PropertyName} does not exist");
+               }).WithMessage("{PropertyName} does not exist");
 
 
 

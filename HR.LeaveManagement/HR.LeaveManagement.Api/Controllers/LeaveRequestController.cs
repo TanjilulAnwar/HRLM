@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Api.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class LeaveRequestController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -21,14 +23,14 @@ namespace HR.LeaveManagement.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<LeaveRequest>>> Get()
+        public async Task<ActionResult<List<LeaveRequest>>> GetAll()
         {
             var leaveTypes = await _mediator.Send(new GetLeaveRequestListQuery());
             return Ok(leaveTypes);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<List<LeaveRequestDto>>> Get(int id)
+        public async Task<ActionResult<LeaveRequestDto>> Get(int id)
         {
             var leaveType = await _mediator.Send(new GetLeaveRequestDetailQuery { Id = id });
             return Ok(leaveType);
@@ -52,7 +54,7 @@ namespace HR.LeaveManagement.Api.Controllers
         }
 
         [HttpPut("changeApproval")]
-        public async Task<ActionResult> Put(int id, [FromBody] ChangeLeaveRequestApprovalDto changeLeaveRequestApprovalDto)
+        public async Task<ActionResult> Put( [FromBody] ChangeLeaveRequestApprovalDto changeLeaveRequestApprovalDto)
         {
             var command = new UpdateLeaveRequestCommand { ChangeLeaveRequestApprovalDto = changeLeaveRequestApprovalDto };
             await _mediator.Send(command);

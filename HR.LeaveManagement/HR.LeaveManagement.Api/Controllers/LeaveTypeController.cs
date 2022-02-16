@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Api.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class LeaveTypeController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -20,7 +22,7 @@ namespace HR.LeaveManagement.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<LeaveTypeDto>>> Get()
+        public async Task<ActionResult<List<LeaveTypeDto>>> GetAll()
         {
             var leaveTypes = await _mediator.Send(new GetLeaveTypeListQuery());
             return Ok(leaveTypes);

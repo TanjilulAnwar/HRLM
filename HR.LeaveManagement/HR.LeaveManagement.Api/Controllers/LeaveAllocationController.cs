@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Api.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class LeaveAllocationController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -22,14 +24,14 @@ namespace HR.LeaveManagement.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<LeaveAllocation>>> Get()
+        public async Task<ActionResult<List<LeaveAllocation>>> GetAll()
         {
             var leaveTypes = await _mediator.Send(new GetLeaveAllocationListQuery());
             return Ok(leaveTypes);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<List<LeaveAllocationDto>>> Get(int id)
+        public async Task<ActionResult<LeaveAllocationDto>> Get(int id)
         {
             var leaveType = await _mediator.Send(new GetLeaveAllocationDetailQuery { Id = id });
             return Ok(leaveType);
