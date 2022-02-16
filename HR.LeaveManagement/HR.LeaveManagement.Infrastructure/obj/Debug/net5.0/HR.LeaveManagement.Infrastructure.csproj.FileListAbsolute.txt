@@ -10,3 +10,8 @@ E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Deb
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net5.0\HR.LeaveManagement.Infrastructure.dll
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net5.0\ref\HR.LeaveManagement.Infrastructure.dll
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net5.0\HR.LeaveManagement.Infrastructure.pdb
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net5.0\HR.LeaveManagement.Application.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net5.0\HR.LeaveManagement.Domain.dll
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net5.0\HR.LeaveManagement.Application.pdb
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\bin\Debug\net5.0\HR.LeaveManagement.Domain.pdb
+E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Infrastructure\obj\Debug\net5.0\HR.LeaveManagement.Infrastructure.csproj.CopyComplete

@@ -10,6 +10,8 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using HR.LeaveManagement.Application.Contracts.Infrastructure;
+using HR.LeaveManagement.Application.Models;
 
 namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Commands
 {
@@ -17,11 +19,16 @@ namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Command
     {
         private readonly ILeaveRequestRepository _leaveRequestRepository;
         private readonly ILeaveTypeRepository _leaveTypeRepository;
+        private readonly IEmailSender _emailSender; 
         private readonly IMapper _mapper;
-        public CreateLeaveRequestCommandHandler(ILeaveRequestRepository leaveRequestRepository, ILeaveTypeRepository leaveTypeRepository, IMapper mapper)
+        public CreateLeaveRequestCommandHandler(ILeaveRequestRepository leaveRequestRepository,
+            ILeaveTypeRepository leaveTypeRepository,
+            IMapper mapper,
+            IEmailSender emailSender)
         {
             _leaveRequestRepository = leaveRequestRepository;
             _leaveTypeRepository =leaveTypeRepository;
+            _emailSender = emailSender;
             _mapper = mapper;
 
         }
@@ -55,6 +62,25 @@ namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Command
             response.Success = true;
             response.Message = "Creation Successful";
             response.Id = leaveRequest.Id;
+
+            var email = new Email
+            {
+                To = "employee@org.com",
+                Body = $"Your leave request for {request.LeaveRequestDto.StartDate:D} to {request.LeaveRequestDto.EndDate:D}" +
+                $"has been submitted successfully.",
+                Subject = "Leave Request Submitted"
+
+            };
+            try
+            {
+                await _emailSender.SendEmail(email);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+
             return response;
 
 
