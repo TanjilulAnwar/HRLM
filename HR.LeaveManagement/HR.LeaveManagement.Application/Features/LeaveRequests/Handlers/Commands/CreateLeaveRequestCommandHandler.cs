@@ -75,7 +75,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveRequests.Handlers.Command
             {
                 await _emailSender.SendEmail(email);
             }
-            catch (Exception ex)
+            catch 
             {
                 return null;
             }
