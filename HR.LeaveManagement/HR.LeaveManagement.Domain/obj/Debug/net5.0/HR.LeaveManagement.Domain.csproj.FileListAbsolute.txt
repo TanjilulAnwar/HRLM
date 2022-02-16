@@ -2,7 +2,6 @@ E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\bin\Debug\net5.
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\bin\Debug\net5.0\HR.LeaveManagement.Domain.dll
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\bin\Debug\net5.0\ref\HR.LeaveManagement.Domain.dll
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\bin\Debug\net5.0\HR.LeaveManagement.Domain.pdb
-E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\obj\Debug\net5.0\HR.LeaveManagement.Domain.csproj.AssemblyReference.cache
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\obj\Debug\net5.0\HR.LeaveManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\obj\Debug\net5.0\HR.LeaveManagement.Domain.AssemblyInfoInputs.cache
 E:\DIPTO\LEAVE\HRLM\HR.LeaveManagement\HR.LeaveManagement.Domain\obj\Debug\net5.0\HR.LeaveManagement.Domain.AssemblyInfo.cs

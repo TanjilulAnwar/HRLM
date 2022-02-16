@@ -37,6 +37,7 @@
           "HR.LeaveManagement.Domain": "1.0.0",
           "HR.LeaveManagement.Infrastructure": "1.0.0",
           "Hr.LeaveManagement.Persistence": "1.0.0",
+          "MediatR": "10.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.14",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
