@@ -1,4 +1,5 @@
 ﻿using HR.LeaveManagement.Application.DTOs.LeaveType;
+using HR.LeaveManagement.Application.Features.LeaveTypes.Requests.Commands;
 using HR.LeaveManagement.Application.Features.LeaveTypes.Requests.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -24,5 +25,38 @@ namespace HR.LeaveManagement.Api.Controllers
             var leaveTypes = await _mediator.Send(new GetLeaveTypeListQuery());
             return Ok(leaveTypes);
         }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<LeaveTypeDto>>> Get(int id)
+        {
+            var leaveType = await _mediator.Send(new GetLeaveTypeDetailQuery { Id = id });
+            return Ok(leaveType);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> Post([FromBody] CreateLeaveTypeDto leaveType)
+        {
+            var command = new CreateLeaveTypeCommand { LeaveTypeDto = leaveType };
+            var response = await _mediator.Send(command);
+            return Ok(leaveType);
+        }
+
+
+        [HttpPut]
+        public async Task<ActionResult> Put([FromBody] LeaveTypeDto leaveType)
+        {
+            var command = new UpdateLeaveTypeCommand { LeaveTypeDto = leaveType };
+            await _mediator.Send(command);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var command = new DeleteLeaveTypeCommand { Id = id };
+            await _mediator.Send(command);
+            return NoContent();
+        }
+
     }
 }
