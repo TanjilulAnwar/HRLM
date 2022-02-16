@@ -1,6 +1,6 @@
 ﻿using HR.LeaveManagement.Application.DTOs.Common;
 using HR.LeaveManagement.Application.DTOs.LeaveType;
-using HR.LeaveManagement.Application.Persistence.Contracts;
+using HR.LeaveManagement.Application.Contracts.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;

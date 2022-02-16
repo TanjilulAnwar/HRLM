@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using HR.LeaveManagement.Application.Persistence.Contracts;
 using Hr.LeaveManagement.Persistence.Repositories;
-
+using HR.LeaveManagement.Application.Contracts.Persistence;
 namespace Hr.LeaveManagement.Persistence
 {
     public static class PersistenceServicesRegistration
