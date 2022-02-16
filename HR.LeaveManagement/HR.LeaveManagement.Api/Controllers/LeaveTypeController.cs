@@ -38,7 +38,7 @@ namespace HR.LeaveManagement.Api.Controllers
         {
             var command = new CreateLeaveTypeCommand { LeaveTypeDto = leaveType };
             var response = await _mediator.Send(command);
-            return Ok(leaveType);
+            return Ok(response);
         }
 
 
