@@ -13,7 +13,8 @@ namespace HR.LeaveManagement.Application.Exceptions
 
         public ValidationException(ValidationResult validationResult)
         {
-            foreach(var error in validationResult.Errors)
+            Errors = new List<string>();
+            foreach (var error in validationResult.Errors)
             {
                 Errors.Add(error.ErrorMessage);
 
